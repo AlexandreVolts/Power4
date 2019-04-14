@@ -1,0 +1,4 @@
+npm init
+npm install --save socket.io
+npm install -g --save typescript
+npm install -g --save nodemon
