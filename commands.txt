@@ -1,5 +1,7 @@
 npm init
 npm install --save socket.io
 npm install --save express
+npm install @types/socket.io
+npm install @types/express
 npm install -g --save typescript
 npm install -g --save-dev nodemon
