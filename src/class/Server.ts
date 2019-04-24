@@ -37,8 +37,6 @@ class Server
 
 	public createGame(s1:Player, s2:Player):void
 	{
-		s1.brother = s2;
-		s2.brother = s1;
 		this.games.push(new Game(s1, s2));
 	}
 	public destroyGame(player:Player):void
@@ -46,7 +44,7 @@ class Server
 		let id:string = player.getId();
 		let index:number = this.games.findIndex((game:Game):boolean =>
 		{
-			let players:Array<Player> = game.getSockets();
+			let players:Array<Player> = game.getPlayers();
 
 			return (players[0].getId() == id || players[1].getId() == id);
 		});

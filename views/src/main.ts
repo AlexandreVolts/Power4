@@ -6,7 +6,7 @@ function main()
 	canvas.width = Game.WIDTH;
 	canvas.height = Game.HEIGHT;
 	game = new Game(canvas);
-	game.render();
+	window.requestAnimationFrame(game.render);
 }
 
 document.addEventListener("DOMContentLoaded", main);
